@@ -9,6 +9,7 @@ declare module "@remix-run/node" {
 }
 
 export default defineConfig({
+  ssr: { noExternal: ['@apollo/client'], },
   plugins: [
     remix({
       future: {
